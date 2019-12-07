@@ -1,0 +1,17 @@
+program -> { sentencias } 
+sentencias -> sentencia sentencias
+sentencias -> 
+sentencia -> id = expresion ; 
+sentencia -> if ( expresion_logica ) sentencia
+expresion -> id resto_expresion
+expresion -> intliteral resto_expresion
+resto_expresion -> + expresion
+resto_expresion -> - expresion
+resto_expresion -> 
+expresion_logica -> id operador_relacional id 
+operador_relacional -> > 
+operador_relacional -> < 
+operador_relacional -> >= 
+operador_relacional -> <= 
+operador_relacional -> == 
+operador_relacional -> != 
